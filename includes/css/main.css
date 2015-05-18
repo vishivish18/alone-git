@@ -1,0 +1,59 @@
+/* 
+Main CSS for layout 
+=============
+
+Author    : Vishal R 
+Date   : May 2015
+
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300');
+
+
+body{
+	
+	font-size:20px; 
+   font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+background-color: #FFF;
+border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+color: #0084ff;
+font-size: 14px;
+}
+
+
+#userinputbox{
+padding-top: 200px;
+}
+.col-lg-2{
+text-align: center;
+}
+
+input[type=email]
+{
+border: none;
+color: #000;
+border-color: transparent;
+outline: none;
+font-size: 42px;    
+    
+}
+input[type=email]:focus
+{
+border: none;
+border-color: transparent;
+outline: none;
+}
+
+#emailok{
+visibility: hidden;
+}
