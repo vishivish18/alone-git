@@ -46,7 +46,7 @@
       </div><!-- /.container-fluid -->
     </nav><!------Navigation panel ends ---->
     
-    
+    <!-- Button trigger modal -->
 
     <div class="row userinputbox">
         <div class="col-lg-2"></div>
@@ -55,17 +55,46 @@
 
                 <form class="signup-form">
                     <input type="email" placeholder="Email Address" autofocus size="50" spellcheck="false"></br></br>
-                    <input type="password" placeholder="*****"></form>
+                    <input type="password" placeholder="*******"></form>
                      <div class="checkbox">
                      <label style="font-size:12px"><input type="checkbox" >Remember me</label>
-                    </div>
-                    <div id="emailok" class="btn btn-primary" style="width:250px;">Login</div></br>
+                    </div></br>
+                    <div id="emailok" class="btn btn-primary" style="width:250px;">Login (Private Beta)</div></br>
                     
                 </form>
             </div>
         <div class="col-lg-6 landing-content">
         <h1>Exlpore, discover and stay connected</h1>
-        <p>because you are not alone .</p></br></br>
+        <p>because you are not alone .</p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Beta Sign Up
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Beta Signup</h4>
+      </div>
+      <div class="modal-body">
+         <form class="signup-form">
+                    <input type="email" placeholder="Email Address" autofocus size="40" spellcheck="false">
+                    <input type="password" placeholder="*******"></form>                    
+                     <div class="radio">
+                     <label style="font-size:12px"><input type="radio" >Male</label>
+                     <label style="font-size:12px"><input type="radio" >Female</label>
+                    </div>                    
+                                        
+                </form>
+      </div>
+      <div class="modal-footer">        
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div></br></br>
         <p style="font-size: 14px; text-align:justify;">
         A social network based on your real time location. Make new friends,<br> stay connected with the old ones. Explore people and places around<br> you, offer or get help. Reveal or stay a stranger. The biggest power of<br> mankind is the power to communicate, never be alone even at strange<br> places. Get in touch with like minded people. Private Beta is on its way. <br>Let's spread love . </p>
         </div>
