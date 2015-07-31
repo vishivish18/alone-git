@@ -31,11 +31,17 @@ font-size: 14px;
 }
 
 
-#userinputbox{
-padding-top: 200px;
+.userinputbox{
+margin-top: 150px;
 }
-.col-lg-2{
-text-align: center;
+.signup-form{
+padding-top: 30px;
+}
+.landinglogo{
+	margin-left: -22px;
+}
+.landing-content{
+	margin-top: 50px;
 }
 
 input[type=email],input[type=password]
@@ -44,7 +50,7 @@ border: none;
 color: #000;
 border-color: transparent;
 outline: none;
-font-size: 42px;    
+font-size: 22px;    
     
 }
 input[type=email],input[type=password]:focus
