@@ -17,6 +17,7 @@ body{
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -42,6 +43,22 @@ padding-top: 30px;
 }
 .landing-content{
 	margin-top: 50px;
+}
+.chatlist-friend{
+	margin: 10px;
+	height:60px;
+	width: 300px;
+	text-align: left;
+}
+.friends{
+	overflow-y:scroll;
+	overflow-x:hidden;
+    height:600px;
+}
+.chat-box{
+	margin-top: 540px;
+	margin-left: 2px;
+	width: 650px;	
 }
 
 input[type=email],input[type=password]
