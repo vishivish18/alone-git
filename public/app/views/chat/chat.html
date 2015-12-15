@@ -4,45 +4,32 @@
             <h4>Hey <strong>{{currentUser.name}}</strong>, Share the link to start a chat<h4>                
         </div>
         <a ng-href="{{link}}" target="_blank"><span class="glyphicon glyphicon-link"></span> {{link}}</a>            
-    </div>
-        
-</div>
+	</div>
+ </div>
 <div class="row">
 	<div class="col-xs-12 col-sm-12 col-md-offset-4 col-md-4" ng-if="chatWith">
-		<g>Start a chat with {{chatWith}}</p>			    
-	            <form ng-submit="register(name,username, password)" ng-controller="RegisterCtrl"> 
-	                <h1>Sign Up </h1>
-	                <div class="form-group">
-	                    <input type="text" name="name" ng-model="name" class="form-control" placeholder="Name">
-	                </div>
-	                <div class="form-group">
-	                    <input type="text" name="email" ng-model="username" class="form-control" placeholder="Email">
-	                </div>
-	                <div class="form-group">
-	                    <input type="password" name="password" ng-model="password" class="form-control" placeholder="Password">
-	                </div>
-	                <button type="submit" class="btn btn-default">Submit</button>
-	            </form>	        	    
+		<g>Start a chat with {{chatWith}}</p>			    	            
 	</div>
 </div>
+<div class="row">
+	<div class="col-md-offset-3 col-md-6"  style="height:500px;overflow-y: auto; ">
+		<div class="chatscreen">
+				<ul class="chats">
 
-<div class="chatscreen">
-
-			<ul class="chats">
-				<!-- The chat messages will go here -->
-			</ul>
+				</ul>
 
 		</div>
-
-	
-
-	<footer>
-
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-offset-3 col-md-6" style="position: absolute;bottom: 20px;">
 		<form id="chatform">
-
-			<textarea id="message" placeholder="Write something.."></textarea>
-			<input type="submit" id="submit" value="SEND"/>
-
+		     <div class="input-group ">
+		            <input id="message" type="text" class="form-control" placeholder="Send a message....">
+			        <span class="input-group-btn">
+			        	<button class="btn btn-default" type="submit">Send <span class="glyphicon glyphicon-send"></span> </button>
+			         </span>
+		      </div>
 		</form>
-
-	</footer>
+	 </div>
+</div>

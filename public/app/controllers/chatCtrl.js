@@ -132,7 +132,7 @@ angular.module('app')
                 //showMessage("chatStarted");
 
                 if ($("#message").val().trim().length) {
-                    //createChatMessage(textarea.val(), name, img, moment());
+                    $(".chats").append($("#message").val());
                     //scrollToBottom();
                     console.log($scope.name);
                     // Send the message to the other person in the chat
@@ -153,11 +153,10 @@ angular.module('app')
                 if (data.msg.trim().length) {
 
                     //createChatMessage(data.msg, data.user, data.img, moment());
+                    $(".chats").append("&#xA;"+data.msg);
                     //scrollToBottom();
                 }
             });
-
-
         }
 
         $scope.setup();
