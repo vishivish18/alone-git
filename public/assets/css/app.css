@@ -1,0 +1,13 @@
+body{
+	overflow-x:hidden; 
+}
+
+h1 {
+  color: #000;
+}
+p {
+  color: #000;
+}
+.top-buffer {
+  margin-top: 20px;
+}
