@@ -87,7 +87,7 @@ angular.module('app')
                         //showMessage("heStartedChatWithNoMessages", data);
                     }
 
-                    chatNickname.text(friend);
+                    //chatNickname.text(friend);
                 }
             });
 
@@ -95,8 +95,9 @@ angular.module('app')
 
                 if (data.boolean && id == data.room) {
 
-                    showMessage("somebodyLeft", data);
-                    chats.empty();
+                    console.log("left",data);
+                    //showMessage("somebodyLeft", data);
+                    //chats.empty();
                 }
 
             });
@@ -105,7 +106,7 @@ angular.module('app')
 
                 if (data.boolean && name.length === 0) {
 
-                    showMessage('tooManyPeople');
+                    //showMessage('tooManyPeople');
                 }
             });
 
