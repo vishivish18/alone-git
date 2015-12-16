@@ -1,7 +1,8 @@
 angular.module('app')
     .controller('chatCtrl', function($scope, $location, $stateParams, $rootScope) {
         var socket = io();
-        var id = $stateParams.id
+        var id = $stateParams.id;
+       
         $scope.setup = function() {
             // on connection to server get the id of person's room
             socket.on('connect', function() {
