@@ -57,7 +57,8 @@ angular.module('app')
             url: 'start',
             views: {
                 'content@': {
-                    templateUrl: 'start.html'                    
+                    templateUrl: 'start.html',
+                    controller: 'LoginCtrl'                  
                 }
             }
 

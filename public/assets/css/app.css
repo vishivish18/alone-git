@@ -1,13 +1,19 @@
-body{
-	overflow-x:hidden; 
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300');
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 h1 {
-  color: #000;
+    color: #000;
 }
+
 p {
-  color: #000;
+    color: #000;
 }
+
 .top-buffer {
-  margin-top: 20px;
+    margin-top: 20px;
 }

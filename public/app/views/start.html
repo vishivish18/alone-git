@@ -1,33 +1,95 @@
-<div class="row">
-    <div class="col-xs-3 col-lg-3" style="overflow-y:auto;
-  overflow-x:hidden;
-    height:600px; border-right: 1px solid #eeeeee;">
-        <div class="row">
-            <div class="col-xs-8">
-                <input type="text" class="form-control input-sm" placeholder="Search" />
+<style>
+input[type=email],
+input[type=password] {
+    border: none;
+    color: #000;
+    border-color: transparent;
+    outline: none;
+    font-size: 22px;
+}
+
+input[type=email],
+input[type=password]:focus {
+    border: none;
+    border-color: transparent;
+    outline: none;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img class="landinglogo" src="/images/landing_logo.png">
+                </div>
             </div>
-            <div class="col-xs-offset-1 col-xs-3">
-            <a class="btn btn-primary btn-sm pull-right">+ Add Friend</a>
-            </div>
+            <form ng-submit="login(username, password)">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <input type="email" name="email" ng-model="username" placeholder="Email" autocomplete="off" autofocus>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <input type="password" name="password" ng-model="password" placeholder="****" autocomplete="off">
+                        </div>
+                        <div class="checkbox">
+                            <label style="font-size:12px">
+                                <input type="checkbox">Remember me</label>
+                        </div>
+                        </br>
+                        <button type="submit" class="btn btn-primary" style="width:250px;">Login (Private Beta)</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="row" style="border-bottom:1px solid #eeeeee;padding:10px;">
-            <div class="col-xs-3">
-                <img src="/images/chat_user.png">
+        <div class="col-lg-6">
+            <h1>Exlpore, discover and stay connected</h1>
+            <p>because you are not alone .</p>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Beta Sign Up
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Beta Signup</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form ng-submit="register(name,username, password)">
+                                <h1>Sign Up </h1>
+                                <div class="form-group">
+                                    <input type="text" name="name" ng-model="name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="email" ng-model="username" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" ng-model="password" class="form-control" placeholder="Password">
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-6">
-                <p>Vishal Ranjan</p>
-            </div>
-            <div class="col-xs-3">
-                <p>10:43am</p>
-            </div>
-        </div>      
-    </div>
-    <div class="col-xs-9 col-lg-6" style="overflow-y:auto;
-  overflow-x:hidden;
-    height:600px; border-right: 1px solid #eeeeee;">
-        Chat
-    </div>
-    <div class="col-lg-3 visible-md visible-lg">
-        Details
+            </br>
+            </br>
+            <p style="font-size: 14px; text-align:justify;">
+                A social network based on your real time location. Make new friends,
+                <br> stay connected with the old ones. Explore people and places around
+                <br> you, offer or get help. Reveal or stay a stranger. The biggest power of
+                <br> mankind is the power to communicate, never be alone even at strange
+                <br> places. Get in touch with like minded people. Private Beta is on its way.
+                <br>Let's spread love . </p>
+        </div>
     </div>
 </div>
