@@ -7,7 +7,7 @@
                 <input type="text" class="form-control input-sm" placeholder="Search" />
             </div>
             <div class="col-xs-offset-1 col-xs-3">
-            <a class="btn btn-primary btn-sm pull-right">+ Add Friend</a>
+                <a class="btn btn-primary btn-sm pull-right">+ Add Friend</a>
             </div>
         </div>
         <div class="row" style="border-bottom:1px solid #eeeeee;padding:10px;">
@@ -20,33 +20,46 @@
             <div class="col-xs-3">
                 <p>10:43am</p>
             </div>
-        </div>      
+        </div>
     </div>
     <div class="col-xs-9 col-lg-6" style="overflow-y:auto;
   overflow-x:hidden;
-    height:600px; border-right: 1px solid #eeeeee;">        
+    height:600px; border-right: 1px solid #eeeeee;">
         <div class="row">
-			<div class="col-xs-12">
-				<div class="chatscreen">
-						<ul class="chats">
-						</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12" style="position: absolute; bottom: 20px;">
-				<form id="chatform">
-				     <div class="input-group ">
-				            <input id="message" type="text" class="form-control" placeholder="Send a message...." autocomplete="off">
-					        <span class="input-group-btn">
+            <div class="col-xs-12">
+                <div class="chatscreen">
+                    <ul class="chats">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" style="position: absolute; bottom: 20px;">
+                <form id="chatform">
+                    <div class="input-group ">
+                        <input id="message" type="text" class="form-control" placeholder="Send a message...." autocomplete="off">
+                        <span class="input-group-btn">
 					        	<button class="btn btn-default" type="submit">Send <span class="glyphicon glyphicon-send"></span> </button>
-					         </span>
-				      </div>
-				</form>
-			 </div>
-		</div>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="col-lg-3 visible-md visible-lg">
-        Details
+        <div class="row">
+            <div class="col-xs-12" ng-if="!chatWith">
+                <div class="page-header">
+                    <p>Hey <strong>{{currentUser.name}}</strong>, Share the link to start a chat<p>                
+        </div>
+        <a ng-href="{{link}}" target="_blank"><span class="glyphicon glyphicon-link"></span> {{link}}</a>            
+	</div>
+ </div>
+<div class="row">
+	<div class="col-xs-12" ng-if="chatWith">
+		<g>Start a chat with {{chatWith}}</p>			    	            
+	</div>
+</div>
+
     </div>
 </div>
