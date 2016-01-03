@@ -53,6 +53,16 @@ angular.module('app')
 
         })
 
+         .state('app.start', {
+            url: 'start',
+            views: {
+                'content@': {
+                    templateUrl: 'start.html'                    
+                }
+            }
+
+        })
+
         .state('app.home.chat', {
             url: '/chat/:id',
             views: {
