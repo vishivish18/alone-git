@@ -1,5 +1,5 @@
 angular.module('app')
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider, $urlRouterProvider,$locationProvider) {
 
         $urlRouterProvider.otherwise('/');
 
@@ -69,7 +69,7 @@ angular.module('app')
 
 
 
-
+        $locationProvider.html5Mode(true)
 
 
     });

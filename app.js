@@ -24,7 +24,7 @@ app.use('/', require('./app/controllers/static'))
 var port = process.env.PORT || 1805
 
 var io = require('socket.io').listen(app.listen(port, function() {
-    console.log('App listening at the ', port);
+    console.log('Magic happens at ', port);
 }));
 
 
